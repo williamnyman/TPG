@@ -1,0 +1,191 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  overflow-x: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #66D2CE;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #2DAA9E;
+  text-align: center;
+  width: 100%; /* Add this line */
+  text-shadow: 2DAA9E 
+
+}
+
+.main-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 3vw;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 2vw;
+}
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  width: 20%; 
+  min-width: 160px; 
+}
+
+.stats-box {
+  /* style options that are consist across boxes */
+  background: #2DAA9E;
+  color: #555;
+  border: 2px solid #888;
+  border-radius: 10px; 
+  width: 100%;
+  min-width: 150px; 
+  max-height: 200px;
+  overflow-y: auto;
+
+  /* style options that are specific to each box */
+  /* padding: 1vw ;
+  height: 100px; can put this into each box specifically if it is out of classs
+  font-size: 1rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vw;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 0; */
+}
+
+.stats-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1vw;
+  color: #555;
+  align-self: center;
+}
+
+.chessboard-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  max-width: 480px;
+  min-width: 480px;
+  flex-shrink: 0;
+}
+
+.moves-box {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.moves-box h3 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.moves-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.move-item {
+  display: flex;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.move-number {
+  color: #888;
+  min-width: 2rem;
+}
+
+.move-text {
+  color: #fff;
+}
+
+.chessboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
